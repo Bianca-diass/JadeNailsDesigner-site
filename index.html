@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- F -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Taissy</title>
+</head>
+<body>
+
+    <!-- PARTE BRANCA -->
+
+    <div class="branca">
+
+        <img src="ParteBranca/logotaissy.png" class="logo">
+
+        <img src="ParteBranca/taissy01.png" class="taissy">
+
+    </div>
+                <!-- PARTE ROSA -->
+<div class="rosa">
+
+    <h1>PROCEDIMENTOS</h1>
+
+    <div class="carrossel">
+
+        <button class="seta esquerda">&#10094;</button>
+
+        <div class="cards" id="cards">
+
+            <!-- CARD 1 -->
+            <div class="card">
+                <img src="Procedimentos/drenagem.png">
+
+                <h2>Drenagem Linfática</h2>
+
+                <p>
+                    Reduz inchaços, estimula a circulação linfática
+                    e proporciona sensação de leveza e bem-estar.
+                </p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card">
+                <img src="Procedimentos/Pos-op.png">
+
+                <h2>Pós-operatório</h2>
+
+                <p>
+                Acelera a recuperação pós-operatória,
+                reduz edemas, favorece a cicatrização
+                e promove mais conforto e bem-estar
+                durante todo o tratamento.
+                </p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card">
+                <img src="Procedimentos/terapiaManual.png">
+
+                <h2>Terapia Manual</h2>
+
+                <p>
+                    Alivia dores, reduz tensões musculares e melhora
+                    a mobilidade, contribuindo para uma recuperação
+                    mais rápida e funcional.
+                </p>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="card">
+                <img src="Procedimentos/Vascular.png">
+
+                <h2>Fisioterapia Vascular</h2>
+
+            <p>
+                Acelera a recuperação pós-operatória,
+                reduz edemas, favorece a cicatrização
+                e promove mais conforto e bem-estar
+                durante todo o tratamento.
+            </p>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="card">
+                <img src="Procedimentos/exercicio.png">
+
+                <h2>Exercícios Fisioterapêuticos</h2>
+
+                <p>
+                    Fortalecem a musculatura, restauram os movimentos
+                    e auxiliam na prevenção de lesões e na recuperação
+                    funcional do corpo.
+                </p>
+            </div>
+
+        </div>
+
+        <button class="seta direita">&#10095;</button>
+
+    </div>
+
+</div>
+            <script>
+            const cards = document.getElementById("cards");
+
+            document.querySelector(".direita").addEventListener("click", () => {
+                cards.scrollBy({
+                    left: 315,
+                    behavior: "smooth"
+                });
+            });
+
+            document.querySelector(".esquerda").addEventListener("click", () => {
+                cards.scrollBy({
+                    left: -315,
+                    behavior: "smooth"
+                });
+            });
+            </script>
+
+         <!-- CURSOS PROFISSIONAIS -->
+         <div class="cursos">
+
+    <img src="CursosProfissionais/fototaissy.png" alt="foto" class="fototaissy">
+
+    <div class="texto-cursos">
+        <h1>CURSOS PROFISSIONAIS</h1>
+
+        <p>
+            Além dos atendimentos especializados, oferecemos cursos voltados ao aperfeiçoamento de profissionais da área da saúde. 
+            As capacitações incluem <span class="destaque">Taping TF no pré e pós-parto, Tape Mecânico e Drenagem Linfática.</span> 
+            Os cursos unem teoria e prática, proporcionando aprendizado de qualidade, técnicas atualizadas e aplicação segura no dia a dia clínico.
+        </p>
+
+        <div class="mini-carrossel">
+            <div class="galeria" id="galeria">
+
+                <div class="foto">
+                    <img src="CursosProfissionais/foto1.png" alt="lembrança do curso">
+                </div>
+
+                <div class="foto">
+                    <img src="CursosProfissionais/foto2.png" alt="lembrança">
+                </div>
+
+                <div class="foto">
+                    <img src="CursosProfissionais/foto3.png" alt="lembrança">
+                </div>
+            </div>      
+        </div>
+    </div>
+</div>
+
+      <!-- FORMAÇÃO E EXPERIÊNCIA -->
+        <section class="trajetoria">
+
+            <div class="titulo-trajetoria">
+                <h1>FORMAÇÃO E EXPERIÊNCIA</h1>
+            </div>
+
+            <div class="conteudo-trajetoria">
+
+                <div class="foto-trajetoria-imagem"  id="taissyUnigran">
+                <img src="imagens/taissy-unigran.png" alt="Taissy unigran">
+            </div>
+
+                <div class="texto-trajetoria">
+
+                    <h2>Há mais de 10 anos formando profissionais</h2>
+
+                <p>
+                    <strong>MSc. Taissy Falleiros</strong> é Fisioterapeuta Dermatofuncional, mestre pela
+                    Universidade Estadual do Paraná (Unioeste) e professora na
+                    <strong>UNIGRAN – Centro Universitário da Grande Dourados</strong>. Especialista no
+                    método <strong>Taping TF</strong>, atua na formação de profissionais por meio de
+                    cursos e treinamentos voltados à fisioterapia dermatofuncional e ao
+                    pós-operatório de cirurgias plásticas. Sua trajetória é marcada pela união
+                    entre conhecimento científico, prática clínica e compromisso com a excelência,
+                    oferecendo um ensino baseado em evidências e técnicas seguras.
+                </p>
+
+                </div>
+
+            </div>
+
+            <!-- BLOCO 2 - INVERSO -->
+        <div class="conteudo-trajetoria inverso">
+
+            <div class="foto-trajetoria-imagem"  id="fotoCertificado">
+                <img src="imagens/certif01.png" alt="Taissy certificado">
+            </div>
+
+            <div class="texto-trajetoria">
+
+                <h2>Evolução Profissional</h2>
+
+                <p>
+                    Taissy Falleiros forma fisioterapeutas para atuar com segurança e excelência 
+                    em fisioterapia dermatofuncional. Os cursos, presenciais em sua clínica em 
+                    <strong>Dourados/MS</strong> ou online, unem teoria, prática e acompanhamento 
+                    de especialistas, com certificação garantida.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- BLOCO 3 - INVERSO -->
+        <div class="conteudo-trajetoria-bloco3">
+
+            <div class="foto-trajetoria-imagem"  id="fotoTaping">
+                <img src="imagens/taping.png" alt="Taissy ministrando um curso">
+                
+            </div>
+
+            <div class="texto-trajetoria">
+
+                <h2>Taping Aktive no Pós-Parto e Pós-Operatório</h2>
+
+            <p>
+                Durante atendimentos <strong>hospitalares e a domicílio</strong>, MSc. Taissy Falleiros trabalha
+                exclusivamente com o Taping Aktive em pacientes no pós-parto e pós-operatório.
+                A técnica auxilia na redução de edemas, no alívio de desconfortos e na
+                recuperação mais rápida da mobilidade, com aplicação individualizada de
+                acordo com o quadro de cada paciente.
+            </p>
+
+            </div>
+
+        </div>
+
+        </section>
+
+                <script>
+                // Função para trocar entre 2 imagens
+                function ativarTrocaFoto(id, fotoOriginal, fotoHover) {
+                    const bloco = document.getElementById(id);
+                    if (!bloco) return;
+
+                    const imgEl = bloco.querySelector("img");
+
+                    bloco.addEventListener("mouseenter", () => {
+                        imgEl.style.opacity = 0;
+                        setTimeout(() => {
+                            imgEl.src = fotoHover;
+                            imgEl.style.opacity = 1;
+                        }, 150);
+                    });
+
+                    bloco.addEventListener("mouseleave", () => {
+                        imgEl.style.opacity = 0;
+                        setTimeout(() => {
+                            imgEl.src = fotoOriginal;
+                            imgEl.style.opacity = 1;
+                        }, 150);
+                    });
+                }
+
+                // Função para trocar entre várias imagens (array)
+                function ativarTrocaFotos(id, fotos) {
+                    const bloco = document.getElementById(id);
+                    if (!bloco) return;
+
+                    const imgEl = bloco.querySelector("img");
+                    let indice = 0;
+
+                    bloco.addEventListener("mouseenter", () => {
+                        indice = (indice + 1) % fotos.length;
+
+                        imgEl.style.opacity = 0;
+
+                        setTimeout(() => {
+                            imgEl.src = fotos[indice];
+                            imgEl.style.opacity = 1;
+                        }, 150);
+                    });
+                }
+
+                 ativarTrocaFotos("taissyUnigran", [
+                    "imagens/taissy-unigran.png",
+                    "imagens/taissycolação.png",
+                    "imagens/colação.png"
+                ]);
+
+                 ativarTrocaFotos("fotoCertificado", [
+                    "imagens/certif01.png",
+                    "imagens/certif02.png",
+                    "imagens/caderno.png"
+                ]);
+
+                // Bloco com 3 imagens
+                ativarTrocaFotos("fotoTaping", [
+                    "imagens/taping.png",
+                    "imagens/barriga.png",
+                    "imagens/aktive.png"
+                ]);
+            </script>
+
+        <!-- PERGUNTAS FREQUENTES -->
+        <section class="faq">
+
+            <div class="faq-titulo">
+                <span>Tire suas dúvidas</span>
+                <h1>Perguntas Frequentes</h1>
+            </div>
+
+            <div class="faq-lista" id="faqLista">
+
+                <div class="faq-item ativo">
+                    <div class="faq-pergunta">
+                        <h2>Os cursos são presenciais ou online?</h2>
+                        <div class="faq-icone">+</div>
+                    </div>
+                    <div class="faq-resposta" style="max-height:200px;">
+                        <p>
+                            Oferecemos as duas modalidades. Os cursos presenciais acontecem na 
+                            clínica em Dourados/MS, e o curso de <strong>Taping TF</strong> 
+                            também está disponível de forma online, para quem não pode se deslocar.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h2>Preciso ser fisioterapeuta para fazer os cursos?</h2>
+                        <div class="faq-icone">+</div>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Sim, os cursos profissionais são voltados para fisioterapeutas e estudantes da área que buscam se especializar em fisioterapia dermatofuncional e técnicas complementares.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h2>Quanto tempo dura o tratamento de drenagem linfática?</h2>
+                        <div class="faq-icone">+</div>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Cada sessão dura em média de 50 a 60 minutos. O número de sessões varia conforme o objetivo do tratamento e é definido após uma avaliação individual.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h2>Vocês emitem certificado ao final do curso?</h2>
+                        <div class="faq-icone">+</div>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Sim, todos os cursos são certificados e reconhecem a carga horária teórica e prática, podendo ser utilizados para comprovação profissional.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h2>Como faço para agendar minha primeira avaliação?</h2>
+                        <div class="faq-icone">+</div>
+                    </div>
+                    <div class="faq-resposta">
+                    <p>
+                        Entre em contato pelo WhatsApp ou Instagram informados na seção 
+                        "Agende Conosco". O retorno é feito conforme a disponibilidade 
+                        na agenda.
+                    </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <script>
+        document.querySelectorAll(".faq-item").forEach(item => {
+            item.querySelector(".faq-pergunta").addEventListener("click", () => {
+                const resposta = item.querySelector(".faq-resposta");
+                const estaAtivo = item.classList.contains("ativo");
+
+                document.querySelectorAll(".faq-item").forEach(outro => {
+                    outro.classList.remove("ativo");
+                    outro.querySelector(".faq-resposta").style.maxHeight = null;
+                });
+
+                if(!estaAtivo){
+                    item.classList.add("ativo");
+                    resposta.style.maxHeight = resposta.scrollHeight + "px";
+                }
+            });
+        });
+        </script>
+
+    <!-- AGENDE CONOSCO -->
+        <section class="agende">
+            <h1>Agende Conosco</h1>
+            <p>
+                Cuidar da sua saúde é o que mais me importa. Me chame pelo canal 
+                que preferir e vamos agendar seu horário.
+            </p>
+
+            <div class="contatos">
+
+                <a href="https://wa.me/556796485266" class="card-contato" target="_blank">
+                    <div class="icone-contato">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h2>WhatsApp</h2>
+                    <p>(67) 9648-5266</p>
+                </a>
+
+                <a href="https://instagram.com/fisio.taissyfalleiros?igsh=cmhldml5MnNmY205" class="card-contato" target="_blank">
+                    <div class="icone-contato">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <h2>Instagram</h2>
+                    <p>fisio.taissyfalleiros</p>
+                </a>
+            </div>
+        </section>
+</body>
+</html>

@@ -1,0 +1,620 @@
+body{
+    margin:0;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*=========================
+      PARTE BRANCA
+==========================*/
+
+.branca{
+    background:white;
+    height:500px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+.logo{
+    width:740px;
+    transform: translateX(-40px);
+}
+
+.taissy{
+    width:440px;
+    height:auto;
+    filter:drop-shadow(0px 8px 30px rgba(0,0,0,.42));
+    transform: translateX(-40px);
+}
+
+/*=========================
+      PARTE ROSA
+==========================*/
+
+.rosa{
+    background:#efb7c3;
+    width:100%;
+    min-height:650px;
+    padding-bottom:50px;
+}
+
+.rosa h1{    /*PROCEDIMENTOS*/
+    color:white;
+    text-align:center;
+    font-size:70px;
+    font-family:"Libre Bodoni", serif;
+    font-weight:378;
+    letter-spacing: 3px;
+    padding-top:40px;
+}
+
+/*=========================
+       CARROSSEL
+==========================*/
+
+.carrossel{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:40px;
+    gap:20px;
+}
+
+.carrossel .cards{
+    width:1190px;
+}
+
+/*=========================
+     ÁREA DOS CARDS
+==========================*/
+
+.cards{
+    display:flex;
+    gap:35px;
+
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+
+    width:1260px;
+    padding:15px;
+}
+
+/*=========================
+         CARD
+==========================*/
+
+.card{
+    width:280px;
+    min-width:280px;
+    height:450px; 
+
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h2{
+    color:#D890A5;
+    font-size:25px;
+    font-family:"Inter", sans-serif;
+    font-weight:600;
+
+    margin:20px 5px 10px;
+    text-align:center;
+}
+
+.card p{
+    color:#555;
+    font-size:17px;
+    font-family:"Inter", sans-serif;
+    font-weight:300;
+
+    padding:0 35px 25px;
+    line-height:1.5;
+
+    flex:1; 
+}
+
+/*=========================
+         SETAS
+==========================*/
+
+.seta{
+    width:55px;
+    height:55px;
+
+    border:none;
+    border-radius:50%;
+
+    background:white;
+    color:#D890A5;
+
+    font-size:30px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    box-shadow:0px 5px 15px rgba(0,0,0,.20);
+
+    transition:.3s;
+}
+
+.seta:hover{
+    background:#D890A5;
+    color:white;
+    transform:scale(1.08);
+}
+
+.seta:active{
+    transform:scale(.95);
+}
+
+
+/*=========================
+      RESPONSIVO
+==========================*/
+
+@media (max-width:1300px){
+
+    .cards{
+        width:930px;
+    }
+
+}
+
+@media (max-width:980px){
+
+    .branca{
+        flex-direction:column;
+        height:auto;
+        padding:40px 20px;
+    }
+
+    .logo{
+        width:90%;
+    }
+
+    .taissy{
+        width:280px;
+    }
+
+    .cards{
+    display:flex;
+    gap:35px;
+    overflow:hidden;
+    scroll-behavior:smooth;
+    justify-content:flex-start;
+}
+
+}
+
+@media (max-width:700px){
+
+    .rosa h1{
+        font-size:42px;
+    }
+
+    .cards{
+        width:300px;
+    }
+
+    .seta{
+        width:45px;
+        height:45px;
+        font-size:24px;
+    }
+
+}
+
+/*=========================
+      PARTE DE CURSOS
+==========================*/
+
+.cursos{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 20px 40px;
+    min-height: 760px;
+}
+
+.fototaissy{
+    width: 368px;
+    flex-shrink: 0;
+    border-radius: 30px;
+}
+
+.texto-cursos{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.texto-cursos h1{
+    color: #D890A5;
+    font-size: 60px;
+    font-family: "Libre Bodoni", serif;
+    font-weight: 378;
+    letter-spacing: 3px;
+    margin: 0 auto 20px;
+    max-width: 90%;
+}
+
+.texto-cursos p{
+    max-width: 680px;
+    margin: 0 auto;
+    color: #6B7280;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.destaque{
+    color: #D890A5;
+    font-weight: 700;
+}
+
+/*=========================
+      MINI CARROSSEL
+==========================*/
+
+.mini-carrossel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.foto{
+    width: 200px;
+    height: 210px;
+    overflow: hidden;
+    border-radius: 10px; /*BORDAS DA FOTO*/
+    transition: all 0.4s ease-in-out;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.foto:hover{
+    border-radius: 50%; /* vira círculo ao passar o mouse */
+    transform: scale(1.30); /* leve zoom, opcional */
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;  
+    display: block;
+}
+
+
+/*=========================
+FORMAÇÃO E EXPERIÊNCIA
+==========================*/
+
+.trajetoria{
+    width: 100%;
+    background: #fff;
+    padding: 80px 0;
+}
+
+.titulo-trajetoria{
+    text-align: center;
+    margin-bottom: 70px;
+    padding-top: 25px;
+}
+
+.titulo-trajetoria h1{
+    font-size: 55px;
+    color:#D890A5;
+    font-family:"Libre Bodoni", serif;
+    font-weight:600;
+    letter-spacing:3px;
+}
+
+/* TODOS OS BLOCOS */
+.conteudo-trajetoria,
+.conteudo-trajetoria-bloco3{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:80px;
+    padding:80px 120px;
+    background:#fff;
+}
+
+/* BLOCO INVERTIDO */
+.conteudo-trajetoria.inverso{
+    flex-direction:row-reverse;
+}
+
+/* IMAGENS */
+.foto-trajetoria img,
+.foto-trajetoria-imagem img{
+    width:420px;
+    height:520px;
+    object-fit:cover;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.foto-trajetoria img:hover,
+.foto-trajetoria-imagem img:hover{
+    transform:scale(1.03);
+}
+
+/* TEXO */
+.texto-trajetoria{
+    width:560px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.texto-trajetoria h2{
+    color:#D890A5;
+    font-size:42px;
+    font-family:"Libre Bodoni", serif;
+    font-weight:600;
+    margin-bottom:25px;
+    text-align:left;
+    width:100%;
+}
+
+.texto-trajetoria p{
+    color:#555;
+    font-size:20px;
+    line-height:1.8;
+    font-family:"Inter", sans-serif;
+    text-align:justify;
+    width:100%;
+}
+
+/*=========================
+  PERGUNTAS FREQUENTES
+==========================*/
+
+.faq{
+    background:#fff;
+    padding:100px 40px;
+}
+
+.faq-titulo{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.faq-titulo span{
+    color:#D890A5;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    display:block;
+    margin-bottom:14px;
+}
+
+.faq-titulo h1{
+    font-family:"Libre Bodoni", serif;
+    font-weight:600;
+    font-size:48px;
+    color:#3d2b30;
+}
+
+.faq-lista{
+    max-width:760px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.faq-item{
+    border:1.5px solid #F0DCE2;
+    border-radius:16px;
+    overflow:hidden;
+    transition:border-color .3s ease, box-shadow .3s ease;
+}
+
+.faq-item.ativo{
+    border-color:#D890A5;
+    box-shadow:0 10px 25px rgba(216,144,165,.15);
+}
+
+.faq-pergunta{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    padding:24px 28px;
+    cursor:pointer;
+    background:#fff;
+}
+
+.faq-pergunta h2{
+    font-family:"Inter", sans-serif;
+    font-weight:500;
+    font-size:17px;
+    color:#3d2b30;
+}
+
+.faq-icone{
+    flex-shrink:0;
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    background:#fbeaf0;
+    color:#D890A5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    font-weight:600;
+    transition:transform .35s ease, background .3s ease, color .3s ease;
+}
+
+.faq-item.ativo .faq-icone{
+    background:#D890A5;
+    color:#fff;
+    transform:rotate(45deg);
+}
+
+.faq-resposta{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+}
+
+.faq-resposta p{
+    padding:0 28px 26px;
+    color:#6B7280;
+    font-size:15.5px;
+    line-height:1.7;
+    font-weight:300;
+    font-family: "Inter" , sans-serif;
+}
+
+@media (max-width:700px){
+    .faq{padding:70px 20px;}
+    .faq-titulo h1{font-size:32px;}
+    .faq-pergunta{padding:20px;}
+    .faq-pergunta h2{font-size:15.5px;}
+}
+
+/*=========================
+      AGENDE CONOSCO
+==========================*/
+
+.agende{
+    background:#efb7c3;
+    padding:90px 40px;
+    text-align:center;
+}
+
+.agende h1{
+    font-family:"Libre Bodoni", serif;
+    font-weight:600;
+    font-size:54px;
+    color:#fff;
+    letter-spacing:2px;
+    margin-bottom:16px;
+}
+
+.agende p{
+    color:#fff;
+    opacity:.9;
+    font-size:20px;
+    font-weight:300;
+    max-width:520px;
+    margin:0 auto 60px;
+    line-height:1.6;
+}
+
+.contatos{
+    display:flex;
+    align-items:stretch;
+    justify-content:center;
+    gap:30px;
+    max-width:1000px;
+    margin:0 auto;
+    flex-wrap:wrap;
+}
+
+.card-contato{
+    background:#fff;
+    border-radius:20px;
+    padding:40px 30px;
+    width:260px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+    transition:transform .3s ease, box-shadow .3s ease;
+    text-decoration:none;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.card-contato:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
+}
+
+.icone-contato{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#fbeaf0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    color:#D890A5;
+    margin-bottom:22px;
+    transition:background .3s ease, color .3s ease;
+}
+
+.card-contato:hover .icone-contato{
+    background:#D890A5;
+    color:#fff;
+}
+
+.card-contato h2{
+    font-family:"Inter", sans-serif;
+    font-weight:600;
+    font-size:19px;
+    color:#3d2b30;
+    margin-bottom:8px;
+}
+
+.card-contato p{
+    font-size:14px;
+    color:#8a8a8a;
+    margin:0;
+    line-height:1.5;
+}
+
+@media (max-width:700px){
+    .agende h1{font-size:36px;}
+    .agende p{font-size:16px;margin-bottom:44px;}
+    .card-contato{width:100%;max-width:320px;}
+}
