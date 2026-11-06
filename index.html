@@ -4,424 +4,510 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- F -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;600;700&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <title>Taissy</title>
+    <title>JADE NAILS DESIGNER</title>
 </head>
 <body>
 
-    <!-- PARTE BRANCA -->
+    <!-- MENU -->
+    <nav class="menu">
+        <a href="#inicio" class="menu-logo">Jade</a>
 
-    <div class="branca">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-        <img src="ParteBranca/logotaissy.png" class="logo">
+        <ul id="menuLinks">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#precos">Preços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#cuidados">Cuidados</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#horarios">Horários</a></li>
+            <li><a href="#agendar" class="menu-btn">Agendar</a></li>
+        </ul>
+    </nav>
 
-        <img src="ParteBranca/taissy01.png" class="taissy">
+    <!-- 1. INÍCIO -->
+    <header class="topo" id="inicio">
+        <h1 class="logo">
+            <span class="logo-nome">Jade</span>
+            <span class="logo-sub">Nails Designer</span>
+        </h1>
+    </header>
+
+    <!-- 2. SOBRE -->
+    <section class="secao" id="sobre">
+        <div class="titulo">
+            <h2>Sobre a Nail Designer</h2>
+        </div>
+
+        <div class="sobre">
+            <div class="sobre-foto">
+                <img src="img/nail-designer.jpg" alt="Jade, Nail Designer">
+            </div>
+
+            <div class="sobre-texto">
+                <h3>Olá, eu sou a Jade</h3>
+
+                <p>Há mais de 5 anos, transformo o cuidado com as unhas em momentos de beleza, carinho e autoestima. Cada atendimento é pensado com dedicação e atenção aos detalhes, para que você se sinta acolhida, especial e ainda mais confiante. Será um prazer cuidar de você!</p>
+
+                <p>Trabalho com produtos de qualidade, materiais esterilizados e um ambiente acolhedor, pensado para o seu momento de cuidado.</p>
+
+                <ul class="sobre-lista">
+                    <li><i class="fa-solid fa-heart"></i> +500 clientes atendidas</li>
+                    <li><i class="fa-solid fa-heart"></i> Produtos de alta qualidade</li>
+                    <li><i class="fa-solid fa-heart"></i> Atendimento com hora marcada</li>
+                    <li><i class="fa-solid fa-heart"></i> Técnicas modernas e personalizadas</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SERVIÇOS -->
+    <section class="secao secao-rosa" id="servicos">
+        <div class="titulo">
+            <h2>Serviços</h2>
+        </div>
+
+        <div class="grid-servicos">
+            <article class="card">
+                <h3>Alongamento em Gel</h3>
+                <img src="../img/alongamentoGel.jpg">
+                <p>Alongamento para proporcionar unhas mais longas, resistentes e com acabamento natural.</p>
+            </article>
+
+            <article class="card">
+                <h3>Esmaltação em Gel</h3>
+                <img src="../img/esmaltaçãoGel.jpg">
+                <p>Esmaltação com brilho intenso e maior durabilidade.</p>
+            </article>
+
+            <article class="card">
+                <h3>Banho de Gel</h3>
+                <img src="../img/banhoGel.jpg">
+                <p>Camada de gel sobre as unhas naturais para oferecer proteção e resistência.</p>
+            </article>
+
+            <article class="card">
+                <h3>Remoção de Gel</h3>
+                <img src="../img/remoçãoGel.jpg.png">
+                <p>Retirada cuidadosa do produto, preservando a saúde das unhas naturais.</p>
+            </article>
+
+            <article class="card">
+                <h3>Manicure Tradicional</h3>
+                <img src="../img/manicureTradicional.jpg">
+                <p>Cuidados com as unhas, cutilagem e esmaltação.</p>
+            </article>
+
+            <article class="card">
+                <h3>Manutenção</h3>
+                <img src="../img/manutenção.jpg">
+                <p>Reposição e ajustes do alongamento para manter as unhas bonitas.</p>
+            </article>
+        </div>
+    </section>
+
+    
+    
+<section class="secao" id="precos">
+
+    <div class="titulo">
+        <h2>Nossos Valores</h2>
+        <p>Beleza e cuidado em cada detalhe.</p>
+    </div>
+
+    <div class="tabela-precos">
+
+        <div class="categoria-preco">Mãos e pés</div>
+
+        <div class="preco-linha">
+            <span>Manicure simples</span>
+            <strong>R$ 35</strong>
+        </div>
+
+        <div class="preco-linha">
+            <span>Pedicure</span>
+            <strong>R$ 40</strong>
+        </div>
+
+        <div class="preco-linha">
+            <span>Manicure spa</span>
+            <strong>R$ 80</strong>
+        </div>
+
+        <div class="categoria-preco">Alongamentos e técnicas</div>
+
+        <div class="preco-linha">
+            <span>Alongamento em gel</span>
+            <strong>R$ 180</strong>
+        </div>
+
+        <div class="preco-linha">
+            <span>Manutenção do alongamento</span>
+            <strong>R$ 120</strong>
+        </div>
+
+        <div class="preco-linha">
+            <span>Esmaltação em gel</span>
+            <strong>R$ 60</strong>
+        </div>
+
+        <div class="preco-linha">
+            <span>Blindagem</span>
+            <strong>R$ 90</strong>
+        </div>
+
+        <div class="preco-linha">
+            <span>Nail art</span>
+            <strong>A partir de R$ 5</strong>
+        </div>
+
+        <p class="aviso">* Valores fictícios, apenas para demonstração.</p>
 
     </div>
-                <!-- PARTE ROSA -->
-<div class="rosa">
+</section>
 
-    <h1>PROCEDIMENTOS</h1>
+<!-- ===== GALERIA ===== -->
+<section class="secao secao-rosa" id="galeria">
+    <div class="titulo">
+        <h2>Galeria de Unhas</h2>
+    </div>
 
-    <div class="carrossel">
+    <div class="galeria">
 
-        <button class="seta esquerda">&#10094;</button>
+        <div class="carta g1">
+            <div class="carta-in">
+                <div class="face frente">
+                    <img src="../img/unhas/nails-antes.jpg" alt="Unhas antes">
+                    <span class="tag tag-antes">ANTES</span>
+                </div>
+                <div class="face verso">
+                    <img src="../img/unhas/unhas1 - depois.jpg" alt="Unhas depois">
+                    <span class="tag tag-depois">DEPOIS</span>
+                </div>
+            </div>
+        </div>
 
-        <div class="cards" id="cards">
+        <div class="carta g2">
+            <div class="carta-in">
+                <div class="face frente">
+                    <img src="../img/unhas/nails-antes.jpg" alt="Unhas antes">
+                    <span class="tag tag-antes">ANTES</span>
+                </div>
+                <div class="face verso">
+                    <img src="../img/unhas/unhas2 - depois.jpg" alt="Unhas depois">
+                    <span class="tag tag-depois">DEPOIS</span>
+                </div>
+            </div>
+        </div>
 
-            <!-- CARD 1 -->
-            <div class="card">
-                <img src="Procedimentos/drenagem.png">
+        <div class="carta g3">
+            <div class="carta-in">
+                <div class="face frente">
+                    <img src="../img/unhas/nails-antes.jpg" alt="Unhas antes">
+                    <span class="tag tag-antes">ANTES</span>
+                </div>
+                <div class="face verso">
+                    <img src="../img/unhas/unhas3 - depois.jpg" alt="Unhas depois">
+                    <span class="tag tag-depois">DEPOIS</span>
+                </div>
+            </div>
+        </div>
 
-                <h2>Drenagem Linfática</h2>
+        <div class="carta g4">
+            <div class="carta-in">
+                <div class="face frente">
+                    <img src="../img/unhas/nails-antes.jpg" alt="Unhas antes">
+                    <span class="tag tag-antes">ANTES</span>
+                </div>
+                <div class="face verso">
+                    <img src="../img/unhas/unhas4 - depois.jpg">
+                <span class="tag tag-depois">DEPOIS</span></div>
+            </div>
+        </div>
 
-                <p>
-                    Reduz inchaços, estimula a circulação linfática
-                    e proporciona sensação de leveza e bem-estar.
-                </p>
+        <div class="carta g5">
+            <div class="carta-in">
+                <div class="face frente">
+                    <img src="../img/unhas/nails-antes.jpg" alt="Unhas antes">
+                    <span class="tag tag-antes">ANTES</span>
+                </div>
+                <div class="face verso">
+                    <img src="../img/unhas/unhas5 - depois.jpg">
+                <span class="tag tag-depois">DEPOIS</span></div>
+            </div>
+        </div>
+
+        <div class="carta g6">
+            <div class="carta-in">
+                <div class="face frente">
+                    <img src="../img/unhas/nails-antes.jpg" alt="Unhas antes">
+                    <span class="tag tag-antes">ANTES</span>
+                </div>
+                <div class="face verso">
+                    <img src="../img/unhas/unhas6 - depois.jpg">
+                <span class="tag tag-depois">DEPOIS</span></div>
+            </div>
+        </div>
+
+        <div class="carta g7">
+            <div class="carta-in">
+                <div class="face frente">
+                    <img src="../img/unhas/nails-antes.jpg" alt="Unhas antes">
+                    <span class="tag tag-antes">ANTES</span>
+                </div>
+                <div class="face verso">
+                    <img src="../img/unhas/unhas7 - depois.jpg">
+                <span class="tag tag-depois">DEPOIS</span></div>
+            </div>
+        </div>
+
+        <div class="carta g8">
+            <div class="carta-in">
+                <div class="face frente">
+                    <img src="../img/unhas/nails-antes.jpg" alt="Unhas antes">
+                    <span class="tag tag-antes">ANTES</span>
+                </div>
+                <div class="face verso">
+                    <img src="../img/unhas/unhas8 - depois.jpg">
+                <span class="tag tag-depois">DEPOIS</span></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- 6. CURSOS -->
+    <section class="secao secao-escura" id="cursos">
+        <div class="titulo titulo-claro">
+            <h2>Cursos</h2>
+        </div>
+
+        <div class="grid-cursos">
+            <article class="curso">
+                <span class="tag">Iniciante</span>
+                <h3>Manicure Profissional</h3>
+                <p>Desenvolva suas habilidades do zero, aprenda os cuidados essenciais e prepare-se para criar unhas bonitas, 
+                   bem-feitas e com acabamento profissional.</p>
+
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> 2 dias de aula</li>
+                    <li><i class="fa-solid fa-check"></i> Material incluso</li>
+                    <li><i class="fa-solid fa-check"></i> Certificado + suporte</li>
+                </ul>
+
+                <strong class="curso-preco">R$ 350</strong>
+            </article>
+
+            <article class="curso destaque">
+                <span class="tag">Mais procurado</span>
+                <h3>Alongamento em Gel</h3>
+                <p>Domine as técnicas de alongamento de unhas, desde a preparação até a finalização, 
+                   garantindo resultados resistentes, naturais e com acabamento profissional.</p>
+
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> 4 dias de aula</li>
+                    <li><i class="fa-solid fa-check"></i> Prática com modelo</li>
+                    <li><i class="fa-solid fa-check"></i> Certificado + suporte</li>
+                </ul>
+
+                <strong class="curso-preco">R$ 490</strong>
+            </article>
+
+            <article class="curso">
+                <span class="tag">Avançado</span>
+                <h3>Nail Art Criativa</h3>
+                <p>Aprenda técnicas criativas de nail art, combinações de cores e detalhes exclusivos para criar unhas modernas, 
+                   delicadas e cheias de personalidade.</p>
+
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> 2 dias de aula</li>
+                    <li><i class="fa-solid fa-check"></i> Kit de pincéis</li>
+                    <li><i class="fa-solid fa-check"></i> Certificado</li>
+                </ul>
+
+                <strong class="curso-preco">R$ 500</strong>
+            </article>
+        </div>
+    </section>
+
+    <!-- 7. CUIDADOS -->
+    <section class="secao secao-rosa" id="cuidados">
+        <div class="titulo">
+            <h2>Cuidados com as Unhas</h2>
+        </div>
+
+        <div class="grid-cuidados">
+            <div class="cuidado">
+                <i class="fa-solid fa-droplet"></i>
+                <h3>Hidrate sempre</h3>
+                <p>Use óleo de cutícula todos os dias para manter as unhas flexíveis e saudáveis.</p>
             </div>
 
-            <!-- CARD 2 -->
-            <div class="card">
-                <img src="Procedimentos/Pos-op.png">
-
-                <h2>Pós-operatório</h2>
-
-                <p>
-                Acelera a recuperação pós-operatória,
-                reduz edemas, favorece a cicatrização
-                e promove mais conforto e bem-estar
-                durante todo o tratamento.
-                </p>
+            <div class="cuidado">
+                <i class="fa-solid fa-hand-sparkles"></i>
+                <h3>Use luvas</h3>
+                <p>Proteja as mãos de produtos de limpeza e água quente por muito tempo.</p>
             </div>
 
-            <!-- CARD 3 -->
-            <div class="card">
-                <img src="Procedimentos/terapiaManual.png">
-
-                <h2>Terapia Manual</h2>
-
-                <p>
-                    Alivia dores, reduz tensões musculares e melhora
-                    a mobilidade, contribuindo para uma recuperação
-                    mais rápida e funcional.
-                </p>
+            <div class="cuidado">
+                <i class="fa-solid fa-ban"></i>
+                <h3>Não use como ferramenta</h3>
+                <p>Evite abrir latas ou raspar objetos com as unhas, isso causa quebras.</p>
             </div>
 
-            <!-- CARD 4 -->
-            <div class="card">
-                <img src="Procedimentos/Vascular.png">
+            <div class="cuidado">
+                <i class="fa-solid fa-calendar-check"></i>
+                <h3>Faça a manutenção</h3>
+                <p>Retorne no prazo combinado para manter o acabamento e a saúde das unhas.</p>
+            </div>
+        </div>
+    </section>
 
-                <h2>Fisioterapia Vascular</h2>
+ <!-- 8. LOCALIZAÇÃO -->
+<section class="secao" id="localizacao">
+    <div class="titulo">
+        <h2>Localização</h2>
+    </div>
+
+    <div class="local">
+        <div class="local-info">
 
             <p>
-                Acelera a recuperação pós-operatória,
-                reduz edemas, favorece a cicatrização
-                e promove mais conforto e bem-estar
-                durante todo o tratamento.
+                <i class="fa-solid fa-location-dot"></i>
+                Rua das Flores, 123 - Centro
             </p>
-            </div>
-
-            <!-- CARD 5 -->
-            <div class="card">
-                <img src="Procedimentos/exercicio.png">
-
-                <h2>Exercícios Fisioterapêuticos</h2>
-
-                <p>
-                    Fortalecem a musculatura, restauram os movimentos
-                    e auxiliam na prevenção de lesões e na recuperação
-                    funcional do corpo.
-                </p>
-            </div>
-
-        </div>
-
-        <button class="seta direita">&#10095;</button>
-
-    </div>
-
-</div>
-            <script>
-            const cards = document.getElementById("cards");
-
-            document.querySelector(".direita").addEventListener("click", () => {
-                cards.scrollBy({
-                    left: 315,
-                    behavior: "smooth"
-                });
-            });
-
-            document.querySelector(".esquerda").addEventListener("click", () => {
-                cards.scrollBy({
-                    left: -315,
-                    behavior: "smooth"
-                });
-            });
-            </script>
-
-         <!-- CURSOS PROFISSIONAIS -->
-         <div class="cursos">
-
-    <img src="CursosProfissionais/fototaissy.png" alt="foto" class="fototaissy">
-
-    <div class="texto-cursos">
-        <h1>CURSOS PROFISSIONAIS</h1>
-
-        <p>
-            Além dos atendimentos especializados, oferecemos cursos voltados ao aperfeiçoamento de profissionais da área da saúde. 
-            As capacitações incluem <span class="destaque">Taping TF no pré e pós-parto, Tape Mecânico e Drenagem Linfática.</span> 
-            Os cursos unem teoria e prática, proporcionando aprendizado de qualidade, técnicas atualizadas e aplicação segura no dia a dia clínico.
-        </p>
-
-        <div class="mini-carrossel">
-            <div class="galeria" id="galeria">
-
-                <div class="foto">
-                    <img src="CursosProfissionais/foto1.png" alt="lembrança do curso">
-                </div>
-
-                <div class="foto">
-                    <img src="CursosProfissionais/foto2.png" alt="lembrança">
-                </div>
-
-                <div class="foto">
-                    <img src="CursosProfissionais/foto3.png" alt="lembrança">
-                </div>
-            </div>      
-        </div>
-    </div>
-</div>
-
-      <!-- FORMAÇÃO E EXPERIÊNCIA -->
-        <section class="trajetoria">
-
-            <div class="titulo-trajetoria">
-                <h1>FORMAÇÃO E EXPERIÊNCIA</h1>
-            </div>
-
-            <div class="conteudo-trajetoria">
-
-                <div class="foto-trajetoria-imagem"  id="taissyUnigran">
-                <img src="imagens/taissy-unigran.png" alt="Taissy unigran">
-            </div>
-
-                <div class="texto-trajetoria">
-
-                    <h2>Há mais de 10 anos formando profissionais</h2>
-
-                <p>
-                    <strong>MSc. Taissy Falleiros</strong> é Fisioterapeuta Dermatofuncional, mestre pela
-                    Universidade Estadual do Paraná (Unioeste) e professora na
-                    <strong>UNIGRAN – Centro Universitário da Grande Dourados</strong>. Especialista no
-                    método <strong>Taping TF</strong>, atua na formação de profissionais por meio de
-                    cursos e treinamentos voltados à fisioterapia dermatofuncional e ao
-                    pós-operatório de cirurgias plásticas. Sua trajetória é marcada pela união
-                    entre conhecimento científico, prática clínica e compromisso com a excelência,
-                    oferecendo um ensino baseado em evidências e técnicas seguras.
-                </p>
-
-                </div>
-
-            </div>
-
-            <!-- BLOCO 2 - INVERSO -->
-        <div class="conteudo-trajetoria inverso">
-
-            <div class="foto-trajetoria-imagem"  id="fotoCertificado">
-                <img src="imagens/certif01.png" alt="Taissy certificado">
-            </div>
-
-            <div class="texto-trajetoria">
-
-                <h2>Evolução Profissional</h2>
-
-                <p>
-                    Taissy Falleiros forma fisioterapeutas para atuar com segurança e excelência 
-                    em fisioterapia dermatofuncional. Os cursos, presenciais em sua clínica em 
-                    <strong>Dourados/MS</strong> ou online, unem teoria, prática e acompanhamento 
-                    de especialistas, com certificação garantida.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- BLOCO 3 - INVERSO -->
-        <div class="conteudo-trajetoria-bloco3">
-
-            <div class="foto-trajetoria-imagem"  id="fotoTaping">
-                <img src="imagens/taping.png" alt="Taissy ministrando um curso">
-                
-            </div>
-
-            <div class="texto-trajetoria">
-
-                <h2>Taping Aktive no Pós-Parto e Pós-Operatório</h2>
 
             <p>
-                Durante atendimentos <strong>hospitalares e a domicílio</strong>, MSc. Taissy Falleiros trabalha
-                exclusivamente com o Taping Aktive em pacientes no pós-parto e pós-operatório.
-                A técnica auxilia na redução de edemas, no alívio de desconfortos e na
-                recuperação mais rápida da mobilidade, com aplicação individualizada de
-                acordo com o quadro de cada paciente.
+                <i class="fa-brands fa-instagram"></i>
+                @jadenailsdesigner
             </p>
 
-            </div>
+            <p>
+                <i class="fa-solid fa-clock"></i>
+                Atendimento: Somente com horário agendado
+            </p>
 
         </div>
 
-        </section>
+        <div class="mapa">
+          <img src="img/localizacao.jpg.png">
+        </div>
+    </div>
+</section>
 
-                <script>
-                // Função para trocar entre 2 imagens
-                function ativarTrocaFoto(id, fotoOriginal, fotoHover) {
-                    const bloco = document.getElementById(id);
-                    if (!bloco) return;
+     <!-- 9. HORÁRIOS -->
+<section class="secao secao-rosa" id="horarios">
+    <div class="titulo">
+        <h2>Horários de Atendimento</h2>
+        <p>Confira nossos horários e agende seu momento de cuidado.</p>
+    </div>
 
-                    const imgEl = bloco.querySelector("img");
+    <div class="horarios-container">
 
-                    bloco.addEventListener("mouseenter", () => {
-                        imgEl.style.opacity = 0;
-                        setTimeout(() => {
-                            imgEl.src = fotoHover;
-                            imgEl.style.opacity = 1;
-                        }, 150);
-                    });
-
-                    bloco.addEventListener("mouseleave", () => {
-                        imgEl.style.opacity = 0;
-                        setTimeout(() => {
-                            imgEl.src = fotoOriginal;
-                            imgEl.style.opacity = 1;
-                        }, 150);
-                    });
-                }
-
-                // Função para trocar entre várias imagens (array)
-                function ativarTrocaFotos(id, fotos) {
-                    const bloco = document.getElementById(id);
-                    if (!bloco) return;
-
-                    const imgEl = bloco.querySelector("img");
-                    let indice = 0;
-
-                    bloco.addEventListener("mouseenter", () => {
-                        indice = (indice + 1) % fotos.length;
-
-                        imgEl.style.opacity = 0;
-
-                        setTimeout(() => {
-                            imgEl.src = fotos[indice];
-                            imgEl.style.opacity = 1;
-                        }, 150);
-                    });
-                }
-
-                 ativarTrocaFotos("taissyUnigran", [
-                    "imagens/taissy-unigran.png",
-                    "imagens/taissycolação.png",
-                    "imagens/colação.png"
-                ]);
-
-                 ativarTrocaFotos("fotoCertificado", [
-                    "imagens/certif01.png",
-                    "imagens/certif02.png",
-                    "imagens/caderno.png"
-                ]);
-
-                // Bloco com 3 imagens
-                ativarTrocaFotos("fotoTaping", [
-                    "imagens/taping.png",
-                    "imagens/barriga.png",
-                    "imagens/aktive.png"
-                ]);
-            </script>
-
-        <!-- PERGUNTAS FREQUENTES -->
-        <section class="faq">
-
-            <div class="faq-titulo">
-                <span>Tire suas dúvidas</span>
-                <h1>Perguntas Frequentes</h1>
+        <div class="horario-card">
+            <div class="horario-icone">
+                <i class="fa-regular fa-calendar"></i>
             </div>
-
-            <div class="faq-lista" id="faqLista">
-
-                <div class="faq-item ativo">
-                    <div class="faq-pergunta">
-                        <h2>Os cursos são presenciais ou online?</h2>
-                        <div class="faq-icone">+</div>
-                    </div>
-                    <div class="faq-resposta" style="max-height:200px;">
-                        <p>
-                            Oferecemos as duas modalidades. Os cursos presenciais acontecem na 
-                            clínica em Dourados/MS, e o curso de <strong>Taping TF</strong> 
-                            também está disponível de forma online, para quem não pode se deslocar.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-pergunta">
-                        <h2>Preciso ser fisioterapeuta para fazer os cursos?</h2>
-                        <div class="faq-icone">+</div>
-                    </div>
-                    <div class="faq-resposta">
-                        <p>Sim, os cursos profissionais são voltados para fisioterapeutas e estudantes da área que buscam se especializar em fisioterapia dermatofuncional e técnicas complementares.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-pergunta">
-                        <h2>Quanto tempo dura o tratamento de drenagem linfática?</h2>
-                        <div class="faq-icone">+</div>
-                    </div>
-                    <div class="faq-resposta">
-                        <p>Cada sessão dura em média de 50 a 60 minutos. O número de sessões varia conforme o objetivo do tratamento e é definido após uma avaliação individual.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-pergunta">
-                        <h2>Vocês emitem certificado ao final do curso?</h2>
-                        <div class="faq-icone">+</div>
-                    </div>
-                    <div class="faq-resposta">
-                        <p>Sim, todos os cursos são certificados e reconhecem a carga horária teórica e prática, podendo ser utilizados para comprovação profissional.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-pergunta">
-                        <h2>Como faço para agendar minha primeira avaliação?</h2>
-                        <div class="faq-icone">+</div>
-                    </div>
-                    <div class="faq-resposta">
-                    <p>
-                        Entre em contato pelo WhatsApp ou Instagram informados na seção 
-                        "Agende Conosco". O retorno é feito conforme a disponibilidade 
-                        na agenda.
-                    </p>
-                    </div>
-                </div>
-
+            <div class="horario-info">
+                <span>Segunda a Sexta</span>
+                <strong>09h às 19h</strong>
             </div>
+            <span class="status aberto">Aberto</span>
+        </div>
 
-        </section>
+        <div class="horario-card">
+            <div class="horario-icone">
+                <i class="fa-regular fa-clock"></i>
+            </div>
+            <div class="horario-info">
+                <span>Sábado</span>
+                <strong>09h às 16h</strong>
+            </div>
+            <span class="status aberto">Aberto</span>
+        </div>
 
-        <script>
-        document.querySelectorAll(".faq-item").forEach(item => {
-            item.querySelector(".faq-pergunta").addEventListener("click", () => {
-                const resposta = item.querySelector(".faq-resposta");
-                const estaAtivo = item.classList.contains("ativo");
+        <div class="horario-card">
+            <div class="horario-icone">
+                <i class="fa-regular fa-calendar-xmark"></i>
+            </div>
+            <div class="horario-info">
+                <span>Domingo</span>
+                <strong>Fechado</strong>
+            </div>
+            <span class="status fechado">Fechado</span>
+        </div>
 
-                document.querySelectorAll(".faq-item").forEach(outro => {
-                    outro.classList.remove("ativo");
-                    outro.querySelector(".faq-resposta").style.maxHeight = null;
-                });
+    </div>
 
-                if(!estaAtivo){
-                    item.classList.add("ativo");
-                    resposta.style.maxHeight = resposta.scrollHeight + "px";
-                }
+    <div class="aviso-horario">
+        <i class="fa-regular fa-bell"></i>
+        <p>Atendimento realizado somente com horário agendado.</p>
+    </div>
+</section>
+
+    <!-- 10. AGENDAMENTO -->
+    <section class="secao agendar" id="agendar">
+        <div class="titulo titulo-claro">
+            <h2>Agendamento</h2>
+        </div>
+
+        <p class="agendar-texto">Escolha o serviço, o dia e o horário. É só chamar no WhatsApp!</p>
+
+        <a class="btn btn-whats"
+           target="_blank"
+           rel="noopener"
+           href="https://wa.me/5567999999999?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Jade%20Nails%20Designer.">
+
+            <i class="fa-brands fa-whatsapp"></i>
+            Agendar pelo WhatsApp
+        </a>
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <p class="rodape-logo">Jade Nails Designer</p>
+        <p>Site fictício para demonstração &copy; 2026</p>
+    </footer>
+
+    <!-- WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/5567999999999"
+       class="whats-flutuante"
+       target="_blank"
+       rel="noopener"
+       aria-label="WhatsApp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- MENU MOBILE -->
+    <script>
+        const toggle = document.getElementById('menuToggle');
+        const links = document.getElementById('menuLinks');
+
+        toggle.addEventListener('click', () => {
+            links.classList.toggle('aberto');
+        });
+
+        links.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => {
+                links.classList.remove('aberto');
             });
         });
-        </script>
+    </script>
 
-    <!-- AGENDE CONOSCO -->
-        <section class="agende">
-            <h1>Agende Conosco</h1>
-            <p>
-                Cuidar da sua saúde é o que mais me importa. Me chame pelo canal 
-                que preferir e vamos agendar seu horário.
-            </p>
-
-            <div class="contatos">
-
-                <a href="https://wa.me/556796485266" class="card-contato" target="_blank">
-                    <div class="icone-contato">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </div>
-                    <h2>WhatsApp</h2>
-                    <p>(67) 9648-5266</p>
-                </a>
-
-                <a href="https://instagram.com/fisio.taissyfalleiros?igsh=cmhldml5MnNmY205" class="card-contato" target="_blank">
-                    <div class="icone-contato">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <h2>Instagram</h2>
-                    <p>fisio.taissyfalleiros</p>
-                </a>
-            </div>
-        </section>
 </body>
 </html>
